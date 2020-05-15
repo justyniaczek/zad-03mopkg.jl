@@ -2,7 +2,7 @@ using mopkg
 using Test
 
 @testset "mopkg.jl" begin
-    @test example_func(2) == 4
-    @test example_func(-2) == 4
+    @test powell(2) == 0
+
     # Write your own tests here.
 end
