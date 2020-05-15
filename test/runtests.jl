@@ -1,9 +1,7 @@
 using mopkg
 using Test
 
-using mopkg
-import mopkg: fdc, sfdc, find_min_interval
-using Test
+
 import InteractiveUtils: subtypes
 """
 Single variable global test functions – functions with single global minimum
