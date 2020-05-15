@@ -8,7 +8,6 @@ function powell(f, x1, x2, x3)
     while x3 - x1 > 0.165
 
         global x4 = 0.5 * ((x2^2 - x3^2) * fx1 + (x3^2 - x1^2)* fx2 + (x1^2 - x2^2) * fx3) /( (x2 - x3)*fx1 + (x3 - x1)* fx2 +(x1 - x2) * fx3)
-        println("fx1: ", fx1, " fx2: ", fx2, " fx3: ", fx3, " x4: ", x4, " i: ", i)
         fx4 = f(x4)
         i= i + 1
 
@@ -32,9 +31,8 @@ function powell(f, x1, x2, x3)
             fx1 = fx4
         end
     end
-    println("Minimum: ", x4 , " counted at ", i - 1 , " iteration")
+    return x4
 end
 
 export powell
-
-end # module
+# module
